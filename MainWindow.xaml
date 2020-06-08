@@ -21,7 +21,6 @@
                Width="300"
                FontSize="17"
                FontWeight="Light"/>
-        <!--zạhgjhsgdhasd-->
         <!--Tác giả-->
         <TextBox Text="TÁC GIẢ" Width="200"
             Canvas.Left="401.333" Canvas.Top="126.499"
