@@ -1,0 +1,51 @@
+﻿<Window x:Class="aBook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:aBook"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Loaded="Window_Loaded">
+    <Canvas>
+        <Image Source="/img/bookCover.jpg" Canvas.Left="29" Canvas.Top="27" Height="367.333" />
+        <!--Tên sách-->
+        <TextBox Text="TÊN SÁCH" Width="200"
+                 Canvas.Left="396.333" Canvas.Top="42.499"
+                 FontSize="25"
+                 FontWeight="Bold"
+                 Foreground="#212653"
+                 BorderThickness="0"/>
+        <Label Content="{Binding Bookname, FallbackValue=Tên sách được đặt ở đây}"
+               Canvas.Left="396.333" Canvas.Top="80.752" 
+               Width="300"
+               FontSize="17"
+               FontWeight="Light"/>
+
+        <!--Tác giả-->
+        <TextBox Text="TÁC GIẢ" Width="200"
+            Canvas.Left="401.333" Canvas.Top="126.499"
+            FontSize="25"
+            FontWeight="Bold"
+            Foreground="#212653"
+            BorderThickness="0"/>
+        <Label Content="{Binding Author, FallbackValue=Tên tác giả được đặt ở đây}"
+            Canvas.Left="396.333" Canvas.Top="164.752" 
+            Width="300"
+            FontSize="17"
+            FontWeight="Light"/>
+
+        <!--Năm xuất bản-->
+        <TextBox Text="NĂM XUẤT BẢN" Width="253"
+            Canvas.Left="396.333" Canvas.Top="207.499"
+            FontSize="25"
+            FontWeight="Bold"
+            Foreground="#212653"
+            BorderThickness="0"/>
+        <Label Content="{Binding Year, FallbackValue=Năm xuất bản được đặt ở đây}"
+            Canvas.Left="401.333" Canvas.Top="245.752" 
+            Width="300"
+            FontSize="17"
+            FontWeight="Light"/>
+    </Canvas>
+</Window>
